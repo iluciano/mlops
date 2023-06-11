@@ -11,7 +11,7 @@ class InputData(BaseModel):
     income: float
 
 # Carregar o modelo salvo
-with open("modelo.pkl", "rb") as file:
+with open("models/modelo.pkl", "rb") as file:
     model = pickle.load(file)
 
 # Criar a instância do FastAPI
